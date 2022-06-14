@@ -1,0 +1,35 @@
+.landing-title {
+    margin: 10px auto;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-size: 4rem;
+    cursor: default;
+    user-select: none;
+    position: relative;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.landing-orange {
+    color: var(--accent);
+}
+.landing-blue {
+    color: var(--secondary)
+}
+.landing-title::after {
+    content: 'io';
+    font-size: 2em;
+    color: var(--secondary-lighten);
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%,-25%);
+    z-index: -1;
+}
+.landing-slogan {
+    color: var(--grey);
+    /*text-transform: uppercase;*/
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.landing-body {
+
+}
