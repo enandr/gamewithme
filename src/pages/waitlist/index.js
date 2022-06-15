@@ -3,7 +3,9 @@ import './App.css';
 import socketIOClient from "socket.io-client";
 import Button from "../../library/Button";
 import Navbar from "../../library/Navbar";
-const ENDPOINT = "localhost:42630";
+//const ENDPOINT = "3.134.168.146:42630";
+const ENDPOINT = "https://streamers-waitlist.herokuapp.com/";
+//const ENDPOINT = "192.168.42.26:42630";
 
 function WaitlistPage() {
     const [joined, setJoined] = useState(false);
