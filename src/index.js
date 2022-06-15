@@ -10,6 +10,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
         <Navbar/>
+        <h1 className={'landing-title'} style={{textAlign: 'center'}}>
+            <span className={'landing-blue'}>game</span>
+            <span className={'landing-orange'}>with</span>
+            <span className={'landing-blue'}>me</span>
+        </h1>
         <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="about" element={<AboutPage />} />

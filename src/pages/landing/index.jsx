@@ -4,11 +4,11 @@ import './landing.css';
 const LandingPage = () => {
     return (
         <div className={'page-layout'}>
-            <h1 className={'landing-title'}>
+            {/*<h1 className={'landing-title'}>
                 <span className={'landing-blue'}>game</span>
                 <span className={'landing-orange'}>with</span>
                 <span className={'landing-blue'}>me</span>
-            </h1>
+            </h1>*/}
             <h3 className={'landing-slogan'}>Game With Your Favorite People</h3>
             <div className={'landing-body'}>
                 <div>
