@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import '../waitlist/App.css';
 import socketIOClient from "socket.io-client";
 
-const ENDPOINT = "localhost:42630";
+//const ENDPOINT = "localhost:42630";
+const ENDPOINT = "https://streamers-waitlist.herokuapp.com/";
 
 function AdminPage() {
     const [joined, setJoined] = useState(false);
