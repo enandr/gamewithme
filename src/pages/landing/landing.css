@@ -31,5 +31,15 @@
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 .landing-body {
+    display: flex;
+    flex-direction: row;
+}
+.landing-body div {
+    width: 50%;
+    margin: 0 20px;
+}
+.landing-body .placeholder {
+    background-color: #666E74;
+    height: 300px;
 
 }

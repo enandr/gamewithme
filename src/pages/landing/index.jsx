@@ -9,16 +9,27 @@ const LandingPage = () => {
                 <span className={'landing-orange'}>with</span>
                 <span className={'landing-blue'}>me</span>
             </h1>
-            <h3 className={'landing-slogan'}>Game With Your Favorite Streamers</h3>
+            <h3 className={'landing-slogan'}>Game With Your Favorite People</h3>
             <div className={'landing-body'}>
-                <p>
-                    Do you want to game with your favorite streamers?
-                    <span className={'landing-blue'}> Game </span>
-                    <span className={'landing-orange'}>With </span>
-                    <span className={'landing-blue'}>Me </span>
-                    lets you play games with your favorite streamers.
-                    Watch their stream, Find your favorite streamer, join their waitlist, and wait to be chosen.
-                </p>
+                <div>
+                    <p>
+                        Are you playing games in a large group? Are you a streamer who wants to play games with your fans? Are you looking for an easy way
+                        to manage the players?
+                    </p>
+                    <p style={{textAlign:'center'}}>
+                        <span className={'landing-blue'}>Game </span>
+                        <span className={'landing-orange'}>With </span>
+                        <span className={'landing-blue'}>Me </span>
+                        is perfect for you!
+                    </p>
+                    <p>You can easily manage your players, create a waitlist, and bring in only the gamers you want to play with. This also can protect
+                        your game from unwanted users by having the ability to hide the room code or password so only the people
+                        who you want to join, can join.</p>
+                </div>
+                <div className={'placeholder'}>
+
+                </div>
+
             </div>
 
         </div>

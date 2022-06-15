@@ -1,4 +1,18 @@
-
+:root {
+    --dark: #1D252A;
+    --light: #FFFFFF;
+    --accent: #FE6E2F;
+    --accent-lighten: rgba(254, 110, 47, 0.5);
+    --secondary: rgb(117, 145, 184);
+    --secondary-lighten: rgba(117, 145, 184, 0.1);
+    --grey: #666E74;
+    --grey-lighten: rgba(204, 204, 204, 0.3);
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    background-color: var(--dark);
+    color: var(--light);
+}
 .loader {
     width: 48px;
     height: 48px;

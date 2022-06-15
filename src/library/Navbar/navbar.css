@@ -20,5 +20,5 @@
 }
 .navbar a:not(.active):hover {
     text-decoration: none;
-    color: var(--grey-lighten)
+    color: var(--accent-lighten)
 }
