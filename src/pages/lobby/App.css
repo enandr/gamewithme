@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+  position: relative;
+}
+ul.room-list {
+  padding-left: 0;
+}
+ul.room-list li {
+  padding: 10px 0;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+ul.room-list li:nth-child(odd) {
+  background-color: var(--grey-lighten);
+}
+ul.room-list li:nth-child(even) {
+  background-color: var(--secondary-lighten);
+}
+ul.room-list li:hover {
+  cursor: pointer;
+  color: var(--dark);
+  background-color: var(--accent);
+}
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+}

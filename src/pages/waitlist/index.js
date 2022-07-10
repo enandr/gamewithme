@@ -3,20 +3,25 @@ import './App.css';
 import socketIOClient from "socket.io-client";
 import Button from "../../library/Button";
 import Navbar from "../../library/Navbar";
-//const ENDPOINT = "3.134.168.146:42630";
-const ENDPOINT = "https://streamers-waitlist.herokuapp.com/";
-//const ENDPOINT = "192.168.42.26:42630";
+
+//const ENDPOINT = "https://streamers-waitlist.herokuapp.com/";
+const ENDPOINT = "localhost:42630";
 
 function WaitlistPage() {
     const [joined, setJoined] = useState(false);
     const [hasBeenChosen, sethasBeenChosen] = useState(false);
     const [waitingForChosen, setWaitingForChosen] = useState(true);
     const [roomMessage, setRoomMessage] = useState('');
+    const [roomList, setRoomList] = useState([]);
 
     useEffect(() => {
         const socket = socketIOClient(ENDPOINT);
         socket.on('joined', data => {
             setJoined(true)
+        })
+        socket.on('roomList', data => {
+            setRoomList(data);
+            console.log(data);
         })
         socket.on('hasBeenChosen', data => {
             sethasBeenChosen(data);

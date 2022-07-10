@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter,Route, Routes } from "react-router-dom";
 import './index.css';
-import {LandingPage, AboutPage,WaitlistPage,AdminPage} from './pages'
+import {LandingPage, AboutPage, WaitlistPage, AdminPage, LobbyPage} from './pages'
 import reportWebVitals from './reportWebVitals';
 import Navbar from "./library/Navbar";
 
@@ -18,7 +18,7 @@ root.render(
         <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="about" element={<AboutPage />} />
-            <Route path="waitlist" element={<WaitlistPage />} />
+            <Route path="waitlist" element={<LobbyPage />} />
             <Route path="admin" element={<AdminPage />} />
         </Routes>
     </BrowserRouter>

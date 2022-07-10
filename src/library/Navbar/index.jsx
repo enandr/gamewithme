@@ -16,7 +16,7 @@ const NavBar = (props) => {
                     <li>Join A Waitlist</li>
                 </NavLink>
                 <NavLink to={'/admin'}>
-                    <li>Admin</li>
+                    <li className={'create-room'}>Create A Room</li>
                 </NavLink>
             </ul>
         </div>
