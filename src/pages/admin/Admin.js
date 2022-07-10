@@ -3,8 +3,8 @@ import '../waitlist/App.css';
 import socketIOClient from "socket.io-client";
 import {Input} from "@mui/material";
 
-const ENDPOINT = "localhost:42630";
-//const ENDPOINT = "https://streamers-waitlist.herokuapp.com/";
+//const ENDPOINT = "localhost:42630";
+const ENDPOINT = "https://streamers-waitlist.herokuapp.com/";
 
 function AdminPage() {
     const [joined, setJoined] = useState(false);
