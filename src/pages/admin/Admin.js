@@ -28,7 +28,14 @@ function AdminPage() {
         })
         socket.on('roomCode', data => {
             setRoomName(data)
+            setInterval(() => {
+                socket.emit('getRoomCounts',data);
+            },500)
         })
+        socket.on('getRoomCounts', data => {
+            setWaitingCount(data);
+        })
+
         socket.on('youAreAdmin',data => {
             setJoined(true)
             setIsAdmin(data);
