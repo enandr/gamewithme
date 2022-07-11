@@ -23,7 +23,7 @@ function LobbyPage() {
                 }
                 } key={'key:'+index}>{room.roomName}</li>
             );
-            setRoomList(roomsLI);
+            setRoomList(data.length ? roomsLI : null);
         })
         return () => socket.disconnect();
     }, []);
@@ -32,7 +32,7 @@ function LobbyPage() {
           <div className="App">
               <h2>Publicly Available Rooms</h2>
               <ul className={'room-list'}>
-                  {roomList}
+                  {roomList ? roomList : <li className={'no-rooms'}>--NO-ROOMS-AVAILABLE--</li>}
               </ul>
           </div>
       </div>

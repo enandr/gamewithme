@@ -18,11 +18,16 @@ ul.room-list li:nth-child(odd) {
 ul.room-list li:nth-child(even) {
   background-color: var(--secondary-lighten);
 }
-ul.room-list li:hover {
+ul.room-list li:not(.no-rooms):hover {
   cursor: pointer;
   color: var(--dark);
   background-color: var(--accent);
 }
+ul.room-list li.no-rooms {
+  background-color: var(--grey-lighten);
+  color: darkgray;
+}
+
 .page-layout {
   display: flex;
   flex-direction: column;
