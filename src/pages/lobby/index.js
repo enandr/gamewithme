@@ -4,14 +4,11 @@ import socketIOClient from "socket.io-client";
 import Button from "../../library/Button";
 import Navbar from "../../library/Navbar";
 
-const ENDPOINT = "https://streamers-waitlist.herokuapp.com/";
-//const ENDPOINT = "localhost:42630";
+//const ENDPOINT = "https://streamers-waitlist.herokuapp.com/";
+const ENDPOINT = process.env.REACT_APP_ENDPOINT;
 
 function LobbyPage() {
     const [joined, setJoined] = useState(false);
-    const [hasBeenChosen, sethasBeenChosen] = useState(false);
-    const [waitingForChosen, setWaitingForChosen] = useState(true);
-    const [roomMessage, setRoomMessage] = useState('');
     const [roomList, setRoomList] = useState();
 
     useEffect(() => {
@@ -22,9 +19,9 @@ function LobbyPage() {
         socket.on('roomList', data => {
             const roomsLI = data.map((room,index) =>
                 <li onClick={() => {
-                    socket.emit('joinNewRoom',room);
+                    socket.emit('joinNewRoom',room.roomName);
                 }
-                } key={'key:'+index}>{room}</li>
+                } key={'key:'+index}>{room.roomName}</li>
             );
             setRoomList(roomsLI);
         })

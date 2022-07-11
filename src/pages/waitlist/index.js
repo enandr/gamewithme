@@ -4,8 +4,8 @@ import socketIOClient from "socket.io-client";
 import Button from "../../library/Button";
 import Navbar from "../../library/Navbar";
 
-const ENDPOINT = "https://streamers-waitlist.herokuapp.com/";
-//const ENDPOINT = "localhost:42630";
+//const ENDPOINT = "https://streamers-waitlist.herokuapp.com/";
+const ENDPOINT = process.env.REACT_APP_ENDPOINT;
 
 function WaitlistPage() {
     const [joined, setJoined] = useState(false);
